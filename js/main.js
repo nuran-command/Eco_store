@@ -31,4 +31,12 @@ $(document).ready(function() {
 
     // Fade in accordion items on page load
     $('.accordion-item').hide().fadeIn(1000);
+    // Add-to-Cart button animation
+    $(".add-to-cart").click(function() {
+        const btn = $(this);
+        btn.text("Added!").addClass("btn-success").css('transform','scale(1.1)');
+        setTimeout(function(){
+            btn.text("Add to Cart").removeClass("btn-success").css('transform','scale(1)');
+        }, 600);
+    });
 });

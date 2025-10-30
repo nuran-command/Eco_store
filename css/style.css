@@ -1,7 +1,4 @@
-/* =========================
-   EcoLife Store Custom Styles
-   Colors: green, white, blue, grey, yellow
-=========================== */
+
 
 /* Root color palette */
 :root {
@@ -45,7 +42,8 @@
     background-color: rgba(255, 255, 255, 0.6);
     padding: 20px;
     border-radius: 10px;
-  }
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
   
   .carousel-caption h1 {
     color: var(--green);
@@ -57,7 +55,7 @@
     font-weight: 500;
   }
   /* Hero Carousel Images */
-#heroCarousel .carousel-item img {
+  #heroCarousel .carousel-item img {
     max-height: 500px; 
     object-fit: cover; 
     border-radius: 15px; 
@@ -140,18 +138,30 @@
   /* Responsive Adjustments */
   @media (max-width: 768px) {
     header nav a {
-      display: block;
-      margin: 5px 0;
+        display: block;
+        margin: 5px 0;
     }
     
     .carousel-caption {
-      font-size: 0.9rem;
-      padding: 15px;
+        font-size: 0.9rem;
+        padding: 15px;
     }
-  }
-  
-  @media (max-width: 576px) {
+
+    .card-img-top {
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
     .carousel-caption h1 {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  }
+
+    .card-img-top {
+        height: 180px;
+    }
+
+    .btn-shop {
+        font-size: 0.9rem;
+    }
+}
