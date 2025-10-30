@@ -1,0 +1,157 @@
+/* =========================
+   EcoLife Store Custom Styles
+   Colors: green, white, blue, grey, yellow
+=========================== */
+
+/* Root color palette */
+:root {
+    --green: #2ecc71;
+    --white: #ffffff;
+    --blue: #3498db;
+    --grey: #ecf0f1;
+    --yellow: #f1c40f;
+    --dark-grey: #2c3e50;
+    --light-grey: #bdc3c7;
+  }
+  
+  /* General body */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--grey);
+    color: var(--dark-grey);
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--white);
+    padding: 15px 0;
+  }
+  
+  header nav a {
+    color: var(--dark-grey);
+    font-weight: 500;
+    margin: 0 12px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    color: var(--green);
+  }
+  
+  /* Carousel */
+  .carousel-caption {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .carousel-caption h1 {
+    color: var(--green);
+    font-weight: 700;
+  }
+  
+  .carousel-caption p {
+    color: var(--dark-grey);
+    font-weight: 500;
+  }
+  /* Hero Carousel Images */
+#heroCarousel .carousel-item img {
+    max-height: 500px; 
+    object-fit: cover; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); 
+  }
+  
+  /* Carousel caption background shadow for readability */
+  #heroCarousel .carousel-caption {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  /* Buttons */
+  .btn-shop {
+    background-color: var(--yellow);
+    color: var(--white);
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-shop:hover {
+    background-color: var(--green);
+    color: var(--white);
+    transform: translateY(-2px);
+  }
+  
+  /* Cards */
+  .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  
+  .card-title {
+    color: var(--green);
+    font-weight: 600;
+  }
+  
+  .card-text {
+    color: var(--dark-grey);
+  }
+  .card-img-top {
+    height: 250px;      
+    width: 100%;         
+    object-fit: cover;   
+    border-radius: 10px 10px 0 0; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+  }
+  
+  /* Section Titles */
+  h2 {
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    padding: 25px 0;
+  }
+  
+  /* Links in Footer */
+  footer a {
+    color: var(--yellow);
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: var(--green);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    header nav a {
+      display: block;
+      margin: 5px 0;
+    }
+    
+    .carousel-caption {
+      font-size: 0.9rem;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-caption h1 {
+      font-size: 1.5rem;
+    }
+  }

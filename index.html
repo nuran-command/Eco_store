@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoLife Store</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="shadow-sm py-3 mb-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <img src="img/Gemini_Generated_Image_pe4q8rpe4q8rpe4q.png" alt="EcoLife Logo" width="50">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="cart.html">Cart</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Carousel -->
+  <div id="heroCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/possessed-photography-1JePildXM7g-unsplash.jpg" class="d-block w-100" alt="Eco Products">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Shop Green, Live Clean</h1>
+          <p>Discover sustainable products for everyday life.</p>
+          <a href="products.html" class="btn btn-shop">Shop Now</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/micheile-henderson-7iGNwuxjBY8-unsplash.jpg" class="d-block w-100" alt="Eco Lifestyle">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Eco-Friendly Lifestyle</h1>
+          <p>Make small choices that have a big impact on the planet.</p>
+          <a href="products.html" class="btn btn-shop">Explore Products</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Featured Products Section -->
+  <section class="container mb-5">
+    <h2 class="mb-4 text-center" style="color: var(--green);">Featured Products</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/bluewater-sweden-P4QBASTAcHo-unsplash.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Reusable Water Bottle</h5>
+            <p class="card-text">Stay hydrated while saving the planet.<br>H<sub>2</sub>O</p>
+            <button class="btn btn-shop w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/giorgio-trovato-E5M98Nox2JA-unsplash.jpg" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Eco-Friendly Tote Bag</h5>
+            <p class="card-text">Carry your groceries in style and reduce plastic waste.</p>
+            <button class="btn btn-shop w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/federica-abbinante-AsnexPb9Mfk-unsplash.jpg" class="card-img-top" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Bamboo Toothbrush Set</h5>
+            <p class="card-text">Switch to biodegradable toothbrushes for a greener smile.</p>
+            <button class="btn btn-shop w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 mt-5">
+    © 2025 EcoLife Store | info@ecolife.com
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
