@@ -25,6 +25,19 @@ $(document).ready(function() {
         function() { $(this).addClass('shadow-lg').css('transform', 'translateY(-5px)'); },
         function() { $(this).removeClass('shadow-lg').css('transform', 'translateY(0)'); }
     );
+    // Dynamic Product Search
+$('#productSearch').on('keyup', function() {
+    const query = $(this).val().toLowerCase();
+  
+    $('.product-card').each(function() {
+      const name = $(this).data('name').toLowerCase();
+      if(name.includes(query)) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  });
 
     // Fade in sections on page load
     $('section').hide().fadeIn(1000);

@@ -25,6 +25,8 @@
         <a href="about.html">About</a>
         <a href="cart.html">Cart</a>
         <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="admin.html">Admin</a>
       </nav>
     </div>
   </header>
@@ -32,9 +34,12 @@
   <!-- Products Section -->
   <section class="container mb-5">
     <h2 class="mb-4 text-center" style="color: var(--green);">Our Products</h2>
+    <section class="container my-4">
+      <input type="text" id="productSearch" class="form-control" placeholder="Search products...">
+    </section>
     <div class="row g-4">
       <!-- Product Card -->
-      <div class="col-md-4">
+      <div class="col-md-4 product-card" data-name="Reusable Water Bottle">
         <div class="card h-100 shadow-sm">
           <img src="img/bluewater-sweden-P4QBASTAcHo-unsplash.jpg" class="card-img-top" alt="Reusable Water Bottle">
           <div class="card-body">
@@ -45,7 +50,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 product-card" data-name="Eco-Friendly Tote Bag">
         <div class="card h-100 shadow-sm">
           <img src="img/giorgio-trovato-E5M98Nox2JA-unsplash.jpg" class="card-img-top" alt="Eco-Friendly Tote Bag">
           <div class="card-body">
@@ -56,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 product-card" data-name="Bamboo Toothbrush Set">
         <div class="card h-100 shadow-sm">
           <img src="img/federica-abbinante-AsnexPb9Mfk-unsplash.jpg" class="card-img-top" alt="Bamboo Toothbrush Set">
           <div class="card-body">
@@ -67,7 +72,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 product-card" data-name="Reusable Metal Straws">
         <div class="card h-100 shadow-sm">
           <img src="img/Gemini_Generated_Image_yigs8vyigs8vyigs.png" class="card-img-top" alt="Reusable Straws">
           <div class="card-body">
@@ -79,7 +84,7 @@
         </div>
       </div>
   
-      <div class="col-md-4">
+      <div class="col-md-4 product-card" data-name="Compostable Packaging Set">
         <div class="card h-100 shadow-sm">
           <img src="img/clair-xT-OoC3Zg_c-unsplash.jpg" class="card-img-top" alt="Compostable Packaging">
           <div class="card-body">
@@ -91,7 +96,7 @@
         </div>
       </div>
   
-      <div class="col-md-4">
+      <div class="col-md-4 product-card" data-name="Eco Cleaning Kit">
         <div class="card h-100 shadow-sm">
           <img src="img/everdrop-gmbh-E4Q54KMPbNo-unsplash.jpg" class="card-img-top" alt="Eco Cleaning Kit">
           <div class="card-body">
@@ -103,6 +108,50 @@
         </div>
       </div>
     </div>
+  </section>
+  <section class="container mb-5">
+    <h2 class="mb-4 text-center" style="color: var(--green);">Pricing Table</h2>
+    <table class="table table-striped table-bordered">
+      <thead class="table-light">
+        <tr>
+          <th>Product</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Reusable Water Bottle</td>
+          <td>Eco-friendly bottle to reduce plastic waste</td>
+          <td>$15</td>
+        </tr>
+        <tr>
+          <td>Eco-Friendly Tote Bag</td>
+          <td>Reusable tote for groceries and daily use</td>
+          <td>$12</td>
+        </tr>
+        <tr>
+          <td>Bamboo Toothbrush Set</td>
+          <td>Switch to biodegradable toothbrushes</td>
+          <td>$8</td>
+        </tr>
+        <tr>
+          <td>Reusable Metal Straws</td>
+          <td>Reduce plastic waste with these eco-friendly straws</td>
+          <td>$5</td>
+        </tr>
+        <tr>
+          <td>Compostable Packaging Set</td>
+          <td>Eco-friendly packaging for food and storage</td>
+          <td>$20</td>
+        </tr>
+        <tr>
+          <td>Eco Cleaning Kit</td>
+          <td>Natural, non-toxic cleaning supplies for home use</td>
+          <td>$25</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
   <!-- Footer -->
